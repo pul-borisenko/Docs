@@ -1,0 +1,23 @@
+site_name: Документация Parts Unlimited
+site_description: Документация учебного проекта Parts Unlimited (ЛР 1.2, Программная инженерия)
+docs_dir: docs
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - search.highlight
+
+plugins:
+  - search:
+      lang: ru
+  # Порядок страниц задаётся файлами .pages — аналог файла .order в вики Azure DevOps
+  - awesome-pages
+
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
